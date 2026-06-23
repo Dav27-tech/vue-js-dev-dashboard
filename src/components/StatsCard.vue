@@ -1,5 +1,8 @@
 <script setup>
-export default {};
+defineProps({
+  title: String,
+  value: Number,
+});
 </script>
 
 <template>

@@ -5,9 +5,8 @@ const developer = {
   country: "Republic Democratic of the Congo",
 };
 </script>
-
 <template>
-  <div>
+  <div class="profile-card">
     <img
       src="https://litslink.com/wp-content/uploads/2024/06/8-1024x682.jpg"
       alt="Profile picture"
@@ -15,6 +14,6 @@ const developer = {
 
     <h2>{{ developer.name }}</h2>
     <p>{{ developer.role }}</p>
-    <span>{{ developper.country }}</span>
+    <span>{{ developer.country }}</span>
   </div>
 </template>

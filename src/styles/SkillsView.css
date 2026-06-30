@@ -1,0 +1,119 @@
+header {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #b5c0cf;
+  font-size: 1.1rem;
+}
+
+.search-section {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+section input,
+section select {
+  background-color: #1e293b;
+  border: 2px solid #334155;
+  color: #f8fafc;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  min-width: 220px;
+}
+
+section input::placeholder {
+  color: #64748b;
+}
+
+section input:focus,
+section select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.skill-grid > p {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #e83c3c;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background-color: #1e293b;
+  border: 2px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  border-color: #3b82f6;
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.35);
+}
+
+.skill-card h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+.skill-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #a5b7d1;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skill-card span {
+  align-self: flex-start;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.skill-card span.Beginner {
+  background-color: rgba(217, 119, 6, 0.2);
+  color: #fbbf24;
+}
+
+.skill-card span.Intermediate {
+  background-color: rgba(3, 105, 161, 0.25);
+  color: #38bdf8;
+}
+
+.skill-card span.Advanced {
+  background-color: rgba(21, 128, 61, 0.25);
+  color: #4ade80;
+}

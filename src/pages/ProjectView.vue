@@ -12,7 +12,7 @@ const selectedTech = ref("");
 const projectList = ref([...projects]);
 
 const filteredProjects = computed(() => {
-  if (!selectedTech) {
+  if (!selectedTech.value) {
     return projectList.value;
   }
 
